@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+    <span class="fill-remaining-space">Add \ Edit comment</span>
+  </mat-toolbar>
+  <br>
+  
+  <br>
+  <div class="form-container" novalidate> 
+    <form class="form">
+  
+      <mat-form-field class="form-element" style="width:60%;" >
+        <input matInput placeholder="Id" [ngModel]="currentcomment.id" name="id">
+      </mat-form-field>
+<br>
+      <mat-form-field class="form-element" style="width:60%;">
+        <input matInput placeholder="Title" [ngModel]="currentcomment.title" email="title">
+      </mat-form-field>
+<br>
+      <mat-form-field class="form-element" style="width:60%;">
+        <input matInput placeholder="Body" [ngModel]="currentcomment.body"body ="body">
+      </mat-form-field>
+<br>
+      <mat-form-field class="form-element" style="width:60%;">
+        <input matInput placeholder="User Id" [ngModel]="currentcomment.userId"Edit ="userId">
+      </mat-form-field>
+  
+  
+      <div class="form-element">
+        <button mat-raised-button color="primary" type="submit" class="button" (click)="savecomment()" >Save</button>
+        &nbsp;
+        <button mat-raised-button color="primary" type="submit" routerLink="/comments" class="button" >Cancel</button>
+      </div>
+

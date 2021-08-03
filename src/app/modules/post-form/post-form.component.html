@@ -1,0 +1,38 @@
+ <mat-toolbar color="primary">
+    <span class="fill-remaining-space">Add \ Edit Post</span>
+  </mat-toolbar>
+  <br>
+  
+  <br>
+  <div class="form-container" novalidate> 
+    <form class="form">
+  
+      <mat-form-field class="form-element" style="width:60%;" >
+        <input matInput placeholder="Id" [ngModel]="currentPost.id" name="id">
+      </mat-form-field>
+<br>
+      <mat-form-field class="form-element" style="width:60%;">
+        <input matInput placeholder="Title" [ngModel]="currentPost.title" name="title">
+      </mat-form-field>
+<br>
+      <mat-form-field class="form-element" style="width:60%;">
+        <input matInput placeholder="Body" [ngModel]="currentPost.body" name="body">
+      </mat-form-field>
+<br>
+      <mat-form-field class="form-element"   style="width:60%;">
+        <input matInput placeholder="User Id" [ngModel]="currentPost.userId" name="userId">
+      </mat-form-field>
+  
+  
+      <div class="form-element">
+        <button mat-raised-button color="primary" type="submit" class="button" (click)="savePost()" >Save</button>
+        &nbsp;
+        <button mat-raised-button color="primary" type="submit" routerLink="/posts" class="button" >Cancel</button>
+      </div>
+
+
+  
+    </form>
+  </div>
+  
+  
